@@ -1,0 +1,135 @@
+
+Java Notes:
+-----------
+
+
+					Compiler Vs Interpreter
+					
+Interpreter:
+-->It performs the execution line by line which doesn't need to create a seperate file.
+-->If, a Programming language needs interpreter, interpreter need to work all the time.
+-->For error correction, the lines present above the error are executed.
+-->Slow performance
+-->Ex: Javascript.
+
+Compiler:
+-->It performs the execution of all the lines of codes at a time and creates a seperate file.
+-->If a Programming language needs compiler, compiler need to work only for once.
+-->For error correction, whole execution will be stopped.
+-->Fast performance.
+-->Ex: C, C++.
+
+
+Note: Java is a hybrid language, which means it consists of both compiler and interpreter
+
+
+						Hirarchy
+						--------
+						
+						First.java
+							|
+							| compiler--> javac -filename.java
+							|
+						   \ /
+							.
+						First.class [Seperate file]-> created by compiler
+							|
+							| Interpreter--> java -filename
+							|	JIT compiler
+						   \ /
+							.
+							JVM => JVM contains the interpreter which executes the class file
+									
+									
+									
+Java as Platform independent language:
+--------------------------------------
+						
+								
+								First.java
+									|
+									|	compile process
+									|
+								   \ /
+									.
+								First.class  -> byte code
+									|
+									|
+									|
+			----------------------------------------------------
+			|						|							|
+			|						|							|
+			|						|							|
+		   \ /					   \ /						   \ /
+			.						.							.
+		JVM for windows			JVM for Linux				JVM for Mac OS
+			|						|							|
+			|						|							|
+			|						|							|
+		Window OS				  LINUX						  Mac OS
+		
+-->Once java programs are compiled on any OS(machine), they(class files) can be run on other OS
+--> It follows WORA principle
+	W --> Write(&Compile)
+	O --> Once
+	R --> Run
+	A --> Anywhere
+-->When java program is compiled, the byte code (--filename.class) is independent of the OS(machine), but JVM is dependent i.e, every OS has its own JVM.
+
+JVM Architecture:
+-----------------
+
+
+
+								Memory
+							-------------	
+							|			|
+							|			|		 |-----Run-time
+							|	Heap	|<-------|	
+							|			|		 |-----Objects
+							|			|	
+							-------------
+							-------------
+	                        |			|
+						    |			|		 |---- Variables
+		                    |	Stack	|<-------|
+                            |			|		 |---- Reference Variables
+                            |			|
+                            -------------
+							
+							
+							
+							
+Features of Java:
+-----------------
+
+-->Simple language
+
+-->Secure: Java cannot be attacked/infected by any virus(JVM consists of Security manager)
+
+-->Portable: In short Platform independent--> can port in other OS with JVM.
+
+-->Object Oriented: OOPs is a method of developing application.
+			
+			OOPs
+			----
+			Abstraction
+			Inheritence
+			Encapsulation
+			Polymorphism
+			
+-->Robust: Java is strong programming language, it doesn't crash even if there are any erros. It stops unless user do it
+
+-->MultiThreading
+
+-->Architecture-Neutral: Can run on any Architecture if it has JVM
+
+-->Interpreted
+
+-->High performance: JVM contain JIT compiler which works faster
+
+-->Distributed
+
+-->Dynamic
+
+
