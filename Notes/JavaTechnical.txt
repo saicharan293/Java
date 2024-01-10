@@ -8,14 +8,14 @@ Primary Data Types:
 		Integer:
 		
 				byte=(2^8): -128 to 127
-				short=2(2^8): 2 bytes: -32768 to 32767 
-				int=4(2^8): 4 bytes
-				long=8(2^8): 8 bytes
+				short=(2^(8*2)): 2 bytes: -32768 to 32767 
+				int=(2^(8*4)): 4 bytes
+				long=(2^(8*8)): 8 bytes
 		
 		floating:
 				
-				float=4(2^8):4 bytes
-				double=8(2^8):8 bytes
+				float=(2^(8*4)):4 bytes
+				double=(2^(8*8)):8 bytes
 		
 		char: 2 bytes= 0 to 65535
 		
