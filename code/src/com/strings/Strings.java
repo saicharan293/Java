@@ -15,7 +15,7 @@ public class Strings {
 		//'==' checks whether both references pointing to the same address or not
 		System.out.println(str1==str2);
 		
-		//.compare returns 
+		//.compareTo returns 
 		//0 if both the strings contain same content along with case sensitivity
 		System.out.println(str1.compareTo(str2));
 		
